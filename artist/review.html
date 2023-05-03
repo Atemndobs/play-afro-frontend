@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- Logout Popup -->
+
+    <div class="log_out">
+        <div class="back-drop"></div>
+        <div class="container">
+            <div class="row">
+                <div class="popup-info">
+                    <div class="col-12">
+                        <p>Are you sure you want to log out?</p>
+                        <div class="line"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 d-flex justify-content-center">
+                            <a class="btn close-log" href="#" role="button">Cancel</a>
+                        </div>
+                        <div class="col-6 d-flex justify-content-center">
+                            <a class="btn" href="dashboard.html" role="button">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+
+    <!-- Header -->
+    <section class="header-section header-main">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../images/logo-icon.svg" alt="" class="icon-rotate mx-2">
+                    <img src="../images/logo-content.svg" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="upload-files d-flex ms-auto me-auto">
+                        <a href="dashboard.html" class="dashboard-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 10.74V13.94" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 9V15.68" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17 10.74V13.94" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                        <div class="d-flex position-relative upload-music">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 12H16" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M12 16V8" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <a href="uploadmusic.html" class="uploadmusic-btn">Upload Music</a>
+
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <a href="notifications.html" class="notify-icon mx-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 6.43994V9.76994" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M12.0199 2C8.3399 2 5.3599 4.98 5.3599 8.66V10.76C5.3599 11.44 5.0799 12.46 4.7299 13.04L3.4599 15.16C2.6799 16.47 3.2199 17.93 4.6599 18.41C9.4399 20 14.6099 20 19.3899 18.41C20.7399 17.96 21.3199 16.38 20.5899 15.16L19.3199 13.04C18.9699 12.46 18.6899 11.43 18.6899 10.76V8.66C18.6799 5 15.6799 2 12.0199 2Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                                <path d="M15.3299 18.8199C15.3299 20.6499 13.8299 22.1499 11.9999 22.1499C11.0899 22.1499 10.2499 21.7699 9.64992 21.1699C9.04992 20.5699 8.66992 19.7299 8.66992 18.8199" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                                </svg>                                    
+                        </a>
+                    </div>
+                    <div class="user-profile position-relative d-flex align-items-center">
+                        <div class="apply-login d-none">
+                            <a href="notifications.html" class="notifications-btn mx-3">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 6.44V9.77" stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M12.0199 2C8.3399 2 5.3599 4.98 5.3599 8.66V10.76C5.3599 11.44 5.0799 12.46 4.7299 13.04L3.4599 15.16C2.6799 16.47 3.2199 17.93 4.6599 18.41C9.4399 20 14.6099 20 19.3899 18.41C20.7399 17.96 21.3199 16.38 20.5899 15.16L19.3199 13.04C18.9699 12.46 18.6899 11.43 18.6899 10.76V8.66C18.6799 5 15.6799 2 12.0199 2Z"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" />
+                                    <path
+                                        d="M15.3299 18.82C15.3299 20.65 13.8299 22.15 11.9999 22.15C11.0899 22.15 10.2499 21.77 9.64992 21.17C9.04992 20.57 8.66992 19.73 8.66992 18.82"
+                                        stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
+                                </svg>
+                            </a>
+                            <a href="#!" class="apply-btn">Apply</a>
+                            <a href="#!" class="Login-btn">Log In</a>
+                        </div>
+                        <div class="user-info d-flex">
+                            <span>Robert Fox
+                                <i class="fa-solid fa-angle-down"></i>
+                                <img src="../images/user-profile.png" alt="">
+                            </span>
+                        </div>
+                        <ul class="profile-menu">
+                            <div class="d-flex profile-header">
+                                <img src="../images/user-profile.png" alt="" width="50 ">
+                                <span>Robert Fox<a href="profile.html">Edit Profile</a></span>
+                            </div>
+                            <div class="profile-scrollmenu">                               
+                                <li>
+                                    <a href="review.html">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 6.75V10.5" stroke="#292D32" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path
+                                                d="M9.00007 16.0575H4.45507C1.85257 16.0575 0.765072 14.1975 2.02507 11.925L4.36507 7.70999L6.57007 3.74999C7.90507 1.34249 10.0951 1.34249 11.4301 3.74999L13.6351 7.71749L15.9751 11.9325C17.2351 14.205 16.1401 16.065 13.5451 16.065H9.00007V16.0575Z"
+                                                stroke="#292D32" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M8.99585 12.75H9.00259" stroke="#292D32" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        In Review
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="subscription.html">
+                                        <svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M0 1.19976V10.0502C0 10.713 0.53697 11.25 1.19976 11.25H16.4353C17.0981 11.25 17.6351 10.713 17.6351 10.0502V1.19976C17.6351 0.53697 17.0981 0 16.4353 0H1.19976C0.53697 0 0 0.53697 0 1.19976V1.19976ZM17.0268 5.32095V10.0502C17.0268 10.3768 16.7617 10.6419 16.4352 10.6419H1.19963C0.873045 10.6419 0.607962 10.3768 0.607962 10.0502V5.32095H17.0268ZM2.73645 9.57765H4.56075C4.72852 9.57765 4.8648 9.44137 4.8648 9.2736C4.8648 9.10583 4.72852 8.96955 4.56075 8.96955H2.73645C2.56868 8.96955 2.4324 9.10583 2.4324 9.2736C2.4324 9.44137 2.56868 9.57765 2.73645 9.57765ZM2.73645 7.75335H6.38506C6.55283 7.75335 6.68911 7.61707 6.68911 7.4493C6.68911 7.28153 6.55283 7.14525 6.38506 7.14525H2.73645C2.56868 7.14525 2.4324 7.28153 2.4324 7.4493C2.4324 7.61707 2.56868 7.75335 2.73645 7.75335ZM0.608101 3.17627V4.71295H17.0268V3.17627H0.608101ZM17.0268 2.56816H0.608101V1.19994C0.608101 0.873357 0.873194 0.608274 1.19976 0.608274H16.4353C16.7619 0.608274 17.027 0.873368 17.027 1.19994L17.0268 2.56816Z"
+                                                fill="black" />
+                                        </svg>
+                                        Subscription
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M15.0935 2.64004C15.15 2.64004 15.2044 2.66251 15.2444 2.70254C15.2844 2.74257 15.3069 2.79674 15.3069 2.85343V17.1467C15.3069 17.2033 15.2844 17.2576 15.2444 17.2976C15.2044 17.3375 15.15 17.36 15.0935 17.36H4.85352C4.73566 17.36 4.64028 17.2646 4.64028 17.1467V2.85343C4.64028 2.73557 4.73566 2.64004 4.85352 2.64004H15.0935V2.64004ZM15.0935 2H4.85352C4.62718 2 4.41021 2.08988 4.25009 2.25C4.09013 2.40997 4.00024 2.62708 4.00024 2.85343V17.1467C4.00024 17.3731 4.09013 17.59 4.25009 17.7501C4.41021 17.9101 4.62718 18 4.85352 18H15.0935C15.3198 18 15.5368 17.9101 15.6969 17.7501C15.8569 17.59 15.9468 17.3731 15.9468 17.1467V2.85343C15.9468 2.62709 15.8569 2.40996 15.6969 2.25C15.5368 2.08988 15.3198 2 15.0935 2Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 3.70624H13.9193C14.0961 3.70624 14.2392 3.88302 14.2392 4.02618C14.2392 4.20296 14.0959 4.34611 13.9193 4.34611H6.02599C5.84921 4.34611 5.70605 4.16933 5.70605 4.02618C5.70605 3.84939 5.84936 3.70624 6.02599 3.70624Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 5.41144H13.9193C14.0961 5.41144 14.2392 5.58822 14.2392 5.73138C14.2392 5.90816 14.0959 6.05131 13.9193 6.05131H6.02599C5.84921 6.05131 5.70605 5.87453 5.70605 5.73138C5.70605 5.55459 5.84936 5.41144 6.02599 5.41144Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 7.12085H13.9193C14.0961 7.12085 14.2392 7.29763 14.2392 7.44079C14.2392 7.61757 14.0959 7.76073 13.9193 7.76073H6.02599C5.84921 7.76073 5.70605 7.58394 5.70605 7.44079C5.70605 7.264 5.84936 7.12085 6.02599 7.12085Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 8.82709H13.9193C14.0961 8.82709 14.2392 9.00387 14.2392 9.14703C14.2392 9.32381 14.0959 9.46696 13.9193 9.46696H6.02599C5.84921 9.46696 5.70605 9.29018 5.70605 9.14703C5.70605 8.97024 5.84936 8.82709 6.02599 8.82709Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 10.5333H13.9193C14.0961 10.5333 14.2392 10.7101 14.2392 10.8533C14.2392 11.03 14.0959 11.1732 13.9193 11.1732H6.02599C5.84921 11.1732 5.70605 10.9964 5.70605 10.8533C5.70605 10.6765 5.84936 10.5333 6.02599 10.5333Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 12.2385H13.9193C14.0961 12.2385 14.2392 12.4153 14.2392 12.5585C14.2392 12.7352 14.0959 12.8784 13.9193 12.8784H6.02599C5.84921 12.8784 5.70605 12.7016 5.70605 12.5585C5.70605 12.3817 5.84936 12.2385 6.02599 12.2385Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 13.9479H13.9193C14.0961 13.9479 14.2392 14.1247 14.2392 14.2679C14.2392 14.4447 14.0959 14.5878 13.9193 14.5878H6.02599C5.84921 14.5878 5.70605 14.411 5.70605 14.2679C5.70605 14.0911 5.84936 13.9479 6.02599 13.9479Z"
+                                                fill="black" />
+                                            <path
+                                                d="M6.02599 15.6542H13.9193C14.0961 15.6542 14.2392 15.831 14.2392 15.9741C14.2392 16.1509 14.0959 16.2941 13.9193 16.2941H6.02599C5.84921 16.2941 5.70605 16.1173 5.70605 15.9741C5.70605 15.7973 5.84936 15.6542 6.02599 15.6542Z"
+                                                fill="black" />
+                                        </svg>
+                                        Terms & Conditions
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M16.0317 4.42615C15.1826 4.25576 14.527 3.60021 14.3567 2.75108C14.2688 2.31749 13.887 2 13.4455 2H6.34503C5.9062 2 5.5217 2.3149 5.43388 2.74847C5.2661 3.58475 4.58987 4.25839 3.75108 4.42615C3.31749 4.51396 3 4.89586 3 5.3373V10.1588C3 12.7631 4.30341 15.1661 6.48453 16.5882L8.96489 18.2039C9.24877 18.3871 9.57139 18.48 9.89411 18.48C10.2167 18.48 10.5393 18.3871 10.8181 18.2039L13.2933 16.5907C15.4769 15.1686 16.7803 12.7606 16.7803 10.1537V5.33767C16.7829 4.89622 16.4654 4.51434 16.0318 4.42652L16.0317 4.42615ZM16.122 10.1559C16.122 12.5383 14.9296 14.7374 12.9344 16.0405L10.4566 17.6562C10.1108 17.8833 9.67715 17.8833 9.32353 17.6562L6.84317 16.0405C4.85058 14.7371 3.6607 12.5408 3.6607 10.1584V5.33691C3.6607 5.20786 3.75101 5.09949 3.88005 5.07359C4.9951 4.85162 5.85706 3.98954 6.08165 2.87972C6.10743 2.75068 6.21592 2.66037 6.34497 2.66037H13.4454C13.5745 2.66037 13.6829 2.75068 13.7088 2.87972C13.9307 3.98954 14.7928 4.85162 15.9026 5.07359C16.0317 5.09938 16.122 5.20787 16.122 5.33691L16.122 10.1559Z"
+                                                fill="black" />
+                                            <path
+                                                d="M10.6916 7.99294L9.56367 9.04596L9.09646 8.57875C8.96742 8.44971 8.75841 8.44971 8.62925 8.57875C8.50021 8.7078 8.50021 8.9168 8.62925 9.04596L9.32093 9.73763C9.38545 9.80216 9.47065 9.83317 9.55323 9.83317C9.6332 9.83317 9.71579 9.80477 9.77781 9.74536L11.138 8.47547C11.2723 8.35154 11.2774 8.14253 11.1535 8.00826C11.0348 7.87672 10.8258 7.869 10.6916 7.99294L10.6916 7.99294Z"
+                                                fill="black" />
+                                            <path
+                                                d="M9.88839 5.50281C7.99646 5.50281 6.45557 7.04373 6.45557 8.93563C6.45557 10.8301 7.99649 12.3709 9.88839 12.3709C11.7828 12.3709 13.3236 10.83 13.3236 8.93563C13.3263 7.0437 11.7828 5.50281 9.88839 5.50281ZM9.88839 11.7126C8.35781 11.7126 7.11381 10.466 7.11381 8.93541C7.11381 7.40481 8.3579 6.16084 9.88839 6.16084C11.419 6.16084 12.6656 7.40493 12.6656 8.93541C12.6656 10.4685 11.4216 11.7126 9.88839 11.7126Z"
+                                                fill="black" />
+                                        </svg>
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#!" class="logout_btn">
+                                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M9.6392 6.34693C9.8401 6.34693 10.0008 6.18621 10.0008 5.98531V4.55492C10.0008 4.08883 10.3825 3.7232 10.8486 3.7232H16.2406C16.7067 3.7232 17.0723 4.08883 17.0723 4.55492V14.9451C17.0723 15.4112 16.7067 15.7768 16.2406 15.7768H10.8486C10.3825 15.7768 10.0008 15.4112 10.0008 14.9451V13.5428C10.0008 13.3419 9.8401 13.1812 9.6392 13.1812C9.4383 13.1812 9.27759 13.3419 9.27759 13.5428V14.9451C9.27759 15.8089 9.98474 16.5 10.8486 16.5H16.2406C17.1044 16.5 17.7955 15.8089 17.7955 14.9451V4.55492C17.7955 3.69106 17.1044 3 16.2406 3H10.8486C9.98474 3 9.27759 3.69106 9.27759 4.55492V5.98531C9.27759 6.18621 9.4383 6.34693 9.6392 6.34693Z"
+                                                fill="black" />
+                                            <path
+                                                d="M3.15241 10.0434L5.752 12.643C5.82433 12.7153 5.91674 12.7474 6.00915 12.7474C6.10156 12.7474 6.19397 12.7113 6.26629 12.643C6.40692 12.5023 6.40692 12.2733 6.26629 12.1327L4.24127 10.1117H13.8482C14.0491 10.1117 14.2098 9.95094 14.2098 9.75004C14.2098 9.54915 14.0491 9.38843 13.8482 9.38843H4.16119L6.27864 6.94555C6.41123 6.79287 6.39516 6.56787 6.24248 6.43526C6.08979 6.30265 5.8648 6.31874 5.73219 6.47142L3.13259 9.46878C3.05223 9.53709 3 9.63754 3 9.75004C3 9.87057 3.06027 9.97906 3.15268 10.0433L3.15241 10.0434Z"
+                                                fill="black" />
+                                        </svg>
+                                        Log Out
+                                    </a>
+                                </li>
+                                <p>Developed by <b>iRoid Solutions</b></p>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- \Header -->
+
+    <!-- Profile Form -->
+
+    <section class="review-body">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="back-btn mt-5">
+                    <a href="profile.html">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="black" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.4999 12H3.66992" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Back
+                    </a>
+                </div> -->
+                <div class="in-review text-center mb-3 mt-5">
+                    <h2 class="mb-5 position-relative"><a href="dashboard.html" class="back-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.57 5.92969L3.5 11.9997L9.57 18.0697" stroke="black" stroke-width="1.5"
+                                stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M20.4999 12H3.66992" stroke="black" stroke-width="1.5" stroke-miterlimit="10"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Back
+                    </a>In Review</h2>
+                </div>
+                <div class="review-sections">
+                    <div class="row">
+                        <div class="col-md-4 mb-4">
+                            <div class="card position-relative">
+                                <span>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="5" cy="5" r="5" fill="#1ED760" />
+                                    </svg>
+                                    In Review
+                                </span>
+                                <img src="../images/uploaded-img.png" alt="" class="mb-3 img-fluid">
+                                <div class="card-body">
+                                    <strong>Im Good(Blue)</strong>
+                                    <p>Publishing Date : <b>12/12/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card position-relative">
+                                <span>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="5" cy="5" r="5" fill="#1ED760" />
+                                    </svg>
+                                    In Review
+                                </span>
+                                <img src="../images/uploaded-img.png" alt="" class="mb-3 img-fluid">
+                                <div class="card-body">
+                                    <strong>Im Good(Blue)</strong>
+                                    <p>Publishing Date : <b>12/12/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-4">
+                            <div class="card position-relative">
+                                <span>
+                                    <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <circle cx="5" cy="5" r="5" fill="#1ED760" />
+                                    </svg>
+                                    In Review
+                                </span>
+                                <img src="../images/uploaded-img.png" alt="" class="mb-3 img-fluid">
+                                <div class="card-body">
+                                    <strong>Im Good(Blue)</strong>
+                                    <p>Publishing Date : <b>12/12/2022</b></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  -->
+
+
+    <!-- JS Links  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+
+    <script src="../js/common.js"></script>
+
+    <!-- /Js Links -->
+
+    <script>
+        $(document).ready(function () {
+
+
+            var readURL = function (input) {
+                if (input.files && input.files[0]) {
+                    var reader = new FileReader();
+
+                    reader.onload = function (e) {
+                        $('.profile-pic').attr('src', e.target.result);
+                    }
+
+                    reader.readAsDataURL(input.files[0]);
+                }
+            }
+
+            $(".file-upload").on('change', function () {
+                readURL(this);
+            });
+
+            $(".upload-button").on('click', function () {
+                $(".file-upload").click();
+            });
+        });
+    </script>
+
+</body>
+
+</html>

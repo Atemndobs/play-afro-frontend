@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/css/intlTelInput.css">
+    <title>DJ-Chart Register</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="register-header text-center">
+        <a href="index.html" class="d-flex align-items-center justify-content-center">
+            <img src="../images/logo-icon.svg" alt="" class="icon-rotate mx-2">
+                    <img src="../images/logo-icon-black.svg" alt="" class="icon-rotate mx-3">
+            <img src="../images/logo-content-black.svg" alt="">
+        </a>
+    </div>
+
+    <div class="register-form">
+        <div class="container-fluid">
+            <div class="register-cover-color">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="form-cover">
+                            <h2>Registration Form</h2>
+                            <form>
+                                <label class="form-label">Choose Your Preference</label>
+                                <div class="d-flex mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="lableselect" value="lableselect">
+                                        <label class="form-check-label" for="lableselect">
+                                            Label
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="soloselect" value="soloselect">
+                                        <label class="form-check-label" for="soloselect">
+                                            Solo
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="mb-3 companys-name">
+                                    <label for="exampleInputName" class="form-label">Company Name</label>
+                                    <input type="text" class="form-control" placeholder="Company Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Artist Name</label>
+                                    <input type="text" class="form-control" placeholder="Artist Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Address</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                        placeholder="Address"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="company-name" class="form-label">Country</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected="" disabled="">Country</option>
+                                        <option value="1">Scale 1</option>
+                                        <option value="2">Scale 2</option>
+                                        <option value="3">Scale 3</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Contact No.</label>
+                                    <div class="number-input d-flex">
+                                        <input type="text" class="form-control" placeholder="+01">
+                                        <input type="text" class="form-control w-100" placeholder="Contact No.">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="inputPassword" class="form-label w-100">Telephone No. (Optional)</label>
+                                    <input type="number" class="form-control" placeholder="Telephone No. (Optional)">
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="basic-url" class="form-label">Password</label>
+                                    <div class="password-wrapper mb-3">
+                                        <input type="password" class="form-control" placeholder="Enter your password" id="password">
+                                        <i class="fa fa-fw fa-eye-slash toggle-password" id="eye" style="color:#9c9b9b ;"></i>
+                                    </div>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="basic-url" class="form-label">Confirm Password</label>
+                                    <div class="password-wrapper mb-3">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" id="confirm_password">
+                                        <i class="fa fa-fw fa-eye-slash toggle-password" id="eye_confirm" style="color:#9c9b9b ;"></i>
+                                    </div>
+                                </div>
+                                <a href="dashboard.html" class="btn btn-primary login-btn">Submit</a>
+                            </form>
+                            <div class="footer-contents text-center">
+                                <p>
+                                    By clicking submit, you agree to DJ chart’s <a href="#!"><b>Terms & Conditions</b></a> and <a href="#!"><b>Privacy
+                                        Policy.</b></a>
+                                </p>
+                                <span class="login-link">
+                                    Already have an account? <a href="login.html">Login</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- JS Links  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@16.0.3/build/js/intlTelInput.js"></script>
+    <script src="../js/common.js"></script>
+
+
+    <!-- /Js Links -->
+
+</body>
+
+</html>
